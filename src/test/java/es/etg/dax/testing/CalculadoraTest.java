@@ -92,4 +92,17 @@ public class CalculadoraTest {
         assertEquals(7, Calculadora.dividir(7, 1));
     }
 
+    @Test
+    @DisplayName("Caso invalido, ya que el divisor es cero, la operación no esta permitida ERROR")
+    void dividirCeroEntreCeroLanzaExcepcion() {
+        assertThrows(OperacionNoValidaException.class,
+                () -> Calculadora.dividir(0, 0));
+    }
+
+    @Test
+    @DisplayName("Caso limite, divide el numero más pequeño positivo entre si mismo")
+    void dividirUnoEntreUno() throws OperacionNoValidaException {
+        assertEquals(1, Calculadora.dividir(1, 1));
+    }
+
 }
