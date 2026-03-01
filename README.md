@@ -36,8 +36,6 @@ Si el divisor es distinto de cero, debe devolver el resultado de la división.
 
 Si el divisor es cero, debe lanzar una excepción porque no se puede dividir entre cero.
 
-Después, organizamos los casos en grupos (particiones):
-
 Casos válidos:
 
 **Número positivo dividido entre positivo.**
